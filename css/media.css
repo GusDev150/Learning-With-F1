@@ -1,4 +1,8 @@
 @media (min-width: 320px) {
+    .nomePrincipal {
+        font-size: 2.5em;
+    }
+
     .container {
         width: 100%;
     }
@@ -21,6 +25,10 @@
 }
 
 @media (min-width: 768px) {
+    .nomePrincipal {
+        font-size: 3em;
+    }
+
     .container {
         width: 90%;
     }
@@ -45,6 +53,10 @@
 @media (min-width: 992px) {
     .container {
         width: 75%;
+    }
+
+    .nomePrincipal {
+        font-size: 3em;
     }
 
     .res {
