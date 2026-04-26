@@ -1,6 +1,6 @@
 export const equipes = {
     ferrari: ['charles leclerc', 'lewis hamilton', 'Scuderia Ferrari'],
-    redbull: ['max verstappen', 'isack hadjar', 'Red Bulln Racing'],
+    redbull: ['max verstappen', 'isack hadjar', 'Red Bull Racing'],
     mclaren: ['lando norris', 'oscar piastri', 'Mc Laren'],
     mercedes: ['george russel', 'kimi antonelli', 'Mercedes-AMG'],
     astonMartin: ['fernando alonso', 'lance stroll', 'Aston Matin'],
