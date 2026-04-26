@@ -1,0 +1,65 @@
+@media (min-width: 320px) {
+    .container {
+        width: 100%;
+    }
+
+    .res {
+        width: 80%;
+    }
+
+    .menu {
+        width: 75%;
+    }
+
+    .menu img {
+        width: 70px;
+    }
+
+    .menu p {
+        font-size: 1.8em;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .res {
+        width: 55%;
+    }
+
+    .menu {
+        width: 59%;
+    }
+
+    .menu img {
+        width: 90px;
+    }
+
+    .menu p {
+        font-size: 2em;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 75%;
+    }
+
+    .res {
+        width: 40%;
+    }
+
+    .menu {
+        width: 40%;
+    }
+
+    .menu img {
+        width: 100px;
+    }
+
+    .menu p {
+        font-size: 2em;
+    }
+}

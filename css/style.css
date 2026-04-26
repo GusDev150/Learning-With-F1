@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+@font-face {
+    font-family: 'F1 Font';
+    src: url(../fonts/Formula1-Bold_web_0.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: 'F1 Font2';
+    src: url(../fonts/Formula1-Regular_web_0.ttf) format(truetype);
+}
+
+:root {
+    --font1: 'F1 Font', serif;
+    --font2: "Titillium Web", sans-serif;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E10600;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100vh;
+}
+
+/* MAIN CONTAINER */
+
+.container {
+    background-color: transparent;
+    border-radius: 10px;
+    width: 60%;
+    height: auto;
+
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 10px;
+}
+
+h1 {
+    font-family: var(--font1);
+    font-size: 3em;
+    color: white;
+}
+
+/* CARRO */
+
+.img {
+    height: 100%;
+    width: 75%;
+}
+
+.img img {
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+/* CONTENT */
+
+.info {
+    height: 100%;
+    width: 80%;
+    padding: 0px 15px 15px 15px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 10px;
+}
+
+.info span {
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0.486);
+    color: rgb(230, 230, 230);
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+    
+.info span label {
+    font-size: 1.4em;
+    font-family: var(--font2);
+    font-weight: bold;
+}
+
+.info span input {
+    height: 20px;
+    outline: none;
+    border: none;
+    width: calc(100% - label);
+    text-indent: 4px;
+    border-radius:3px;
+    font-family: var(--font2);
+}
+
+input {
+    background-color: #ffffffe5;
+}
+
+select {
+    height: 20px;
+    appearance: none;
+    -webkit-appearance: none;
+    font-family: var(--font2);
+    -moz-appearance: none;
+    text-indent: 3px;
+    outline: none;
+    border: 1px solid rgba(37, 37, 37, 0.11);
+    border-radius: 3px;
+    background-color: #ffffffe5;
+}
+
+/* BOTTOM BUTTONS */
+
+.env {
+    align-self: flex-start;
+    margin-left: 5%;
+}
+
+.env button {
+    cursor: pointer;
+    padding: 2px;
+    background-color: rgba(0, 0, 0, 0.486);
+    color: white;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.493);
+    border-radius: 3px;
+    width: 75px;
+    font-family: var(--font2);
+}
+
+select option {
+    color: rgb(0, 0, 0);
+    padding: 10px;
+}
+
+/* MENU PILOTS */
+
+.menu {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 40%;
+    border-radius: 10px;
+    overflow-y: auto;
+    height: 500px;
+    scrollbar-width: none;
+    gap: 0px;
+    border: 1px solid black;
+    z-index: 1001;
+}
+
+.content {
+    border-bottom: 1px solid rgba(126, 126, 126, 0.637);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    width: 100%;
+    height: auto;
+}
+
+.content:first-child {
+    padding-top: 1100px;
+}
+
+.content p {
+    display: block;
+    font-family: var(--font2);
+    font-size: 2em;
+}
+
+.content img {
+    width: 100px;
+    border-radius: 50px;
+    display: block;
+}
+
+.title {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 15px;
+    border-bottom: 1px solid rgba(126, 126, 126, 0.637);
+}
+
+.title h1 {
+    font-size: 2.5em;
+    font-family: var(--font2);
+    color: black;
+    font-weight: bolder;
+}
+
+.title button {
+    background-color: transparent;
+    color: black;
+    font-size: 2em;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+/* BACKGROUND BLACK TO MENUS */
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    display: none;
+}
+
+/* RETURN ANSWERS */
+
+.res {
+    width: 30%;
+    background-color: white;
+    color: black;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    height: 250px;
+    border: 1px solid black;
+    display: none;
+    z-index: 1001;
+}
+
+.res p {
+    font-size: 1.5em;
+    font-family: var(--font2);
+}
+
+.res h1 {
+    color: black;
+    font-size: 2em;
+    text-align: center;
+}
+
+/* LEAVE BUTTONS*/
+
+.sairRes {
+    font-family: var(--font2);
+    width: 50%;
+    align-self: center;
+    background-color: rgba(0, 0, 0, 0.315);
+    border: 1px solid black;
+    border-radius: 3px;
+    color: black;
+    font-size: 1.2em;
+    cursor: pointer;
+}
