@@ -8,7 +8,7 @@ export const equipes = {
     audi: ['nico hulkenberg', 'gabriel bortoleto', 'Audi'],
     alpine: ['pierre gasly', 'franco colapinto', 'Alpine'],
     cadillac: ['sergio perez', 'valtteri bottas', 'Cadillac'],
-    willians: ['carlos sainz', 'alexander albon', 'Williams Racing'],
+    willians: ['carlos sainz', 'alexander albon', 'Willians Racing'],
     racingbulls: ['liam lawson', 'arvid lindblad', 'Racing Bulls']
 }
 
